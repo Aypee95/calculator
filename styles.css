@@ -1,0 +1,76 @@
+/* styles.css */
+
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-color: #282c34;
+    color: #61dafb;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #61dafb;
+    border-radius: 10px;
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#calculation-history {
+    grid-column: span 4;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #fff;
+    min-height: 20px;
+}
+
+#display {
+    grid-column: span 4;
+    text-align: right;
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #444;
+    border: 1px solid #61dafb;
+    border-radius: 5px;
+    min-height: 60px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #61dafb;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.number-btn, .operator-btn, .equal-btn, .parenthesis-btn {
+    background-color: #282c34;
+    color: #61dafb;
+}
+
+.equal-btn {
+    background-color: #61dafb;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #4a90e2;
+}
